@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Custom Animation</title>
+    <script>
+
+
+        tailwind.config = {
+            "theme": {
+                "extend": {
+                    "animation": {
+                        "rotate": "rotate 2s linear infinite",
+                        "xyz": "xyz 2s linear infinite",
+                        "bgc": "bgc 2s linear infinite"
+                    },
+                    "keyframes": {
+                        "rotate": {
+                            "100%": { "transform": 'rotate(360deg)' }
+                        },
+                        "xyz": {
+                            "100%": {
+                                "transform": 'translateX(400px)'
+                            }
+                        },
+                        "bgc": {
+                            "100%": {
+                                "background-color": "red"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex h-[100vh] border-2 items-center justify-center">
+
+    <h1 class="animate-xyz">I am animate 360deg</h1>
+    <div class="h-20 w-20 border-2 border-sky-500 animate-bgc">
+        I am div
+    </div>
+
+</body>
+
+</html>
