@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6604ef9bb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The November Room</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        "bgi": "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./images/main.jpeg)",
+                        "girl": "url(./images/girl.jpeg)"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+    <div class=" text-white bg-bgi h-screen bg-cover bg-top flex flex-col">
+        <div class=" h-24 bg-transparent flex items-center justify-between px-3 md:justify-between md:px-48">
+            <div class="font-bold md:text-xl">
+                <h1>THE NOVEMBER ROOM</h1>
+            </div>
+
+            <div class="text-3xl mr-5 md:hidden">
+                <i class="fa-solid fa-burger"></i>
+            </div>
+            <ul class="flex list-none text-3xl text-amber-700 w-1/7 items-center px-3 hidden justify-between md:flex">
+                <li class="mx-3"><i class=" fa-brands fa-facebook"></i></li>
+                <li class="mx-3"><i class="fa-brands fa-twitter"></i></li>
+                <li class="mx-3"><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+
+        <div class="h-4/6 flex flex-col items-center justify-center text-center px-4">
+            <h1 class="text-2xl font-extrabold mb-1 md:text-5xl">FEEL THE <span class="text-amber-700">POWER</span>
+            </h1>
+            <p class="text-lg mb-1 md:text-2xl  md:w-1/2">
+                Welcome to The November Room. We are a fitness and training
+                center that focuses on pushing you to your absolute limit.
+                Download our complete brochure to get started today!
+            </p>
+            <div class="border-2 border-amber-700 p-4 mt-1 hover:bg-amber-700 font-bold rounded-md">
+                Download brochure
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-black p-3 md:flex h-fit md:items-center md:flex md:items-center md:justify-around ">
+
+        <div class="bg-girl h-[45rem] bg-cover bg-center max-w-2xl mb-1 md:w-[30rem] rounded-md" data-aos="fade-right">
+        </div>
+        <div class="h-96 text-white flex flex-col items-left p-3 text-left md:max-w-[30rem]" data-aos="fade-right">
+            <p class="text-[10px]">About our gym</p>
+            <h1 class="text-2xl font-bold mb-2">Safe body Building</h1>
+            <p class="font-bold text-xl">
+                The extension comes with three pre-built pages to help you get started faster. You can change the text
+                and images and you're good to go.
+            </p>
+            <ul class="list-node mt-6">
+                <li class="py-2">
+                    <div class="flex items-center ">
+                        <i class="text-amber-700  text-5xl  fa-solid fa-dumbbell"></i>
+                        <p class="ml-3"> latest & gratest gym equipment</p>
+                    </div>
+                </li>
+                <li class="py-2">
+                    <div class="flex items-center ">
+                        <i class="text-amber-700  text-5xl  fa-solid fa-dumbbell"></i>
+                        <p class="ml-3"> latest & gratest gym equipment</p>
+                    </div>
+                </li>
+                <li class="py-2">
+                    <div class="flex items-center ">
+                        <i class="text-amber-700  text-5xl  fa-solid fa-dumbbell"></i>
+                        <p class="ml-3"> latest & gratest gym equipment</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1300,
+            once: false
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- https://naughty-cray-767d32.netlify.app/ -->
+<!-- https://github.com/michalsnik/aos -->
